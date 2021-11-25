@@ -21,10 +21,10 @@ start.addEventListener('click', function(){
 // reset timer to original values
 reset.addEventListener('click', function(){
 	wm.innerText = 00;
-	ws.innerText = "10";
+	ws.innerText = "45";
 
 	bm.innerText = 00;
-	bs.innerText = "05";
+	bs.innerText = "15";
 
 	document.getElementById('counter').innerText = 0;
 	stopInterval()
@@ -56,10 +56,10 @@ function timer(){
 	// increment Counter by one if one full cycle is complete
 	if(wm.innerText == 0 && ws.innerText == 0 && bm.innerText == 0 && bs.innerText == 0){
 		wm.innerText = 00;
-		ws.innerText = "10";
+		ws.innerText = "45";
 
 		bm.innerText = 00;
-		bs.innerText = "05";
+		bs.innerText = "15";
 
 		document.getElementById('counter').innerText++;
 	}
